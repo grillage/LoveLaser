@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Love to Laser</title>
+    <style>
+      body{
+        background-color: lavender;
+      }
+      #canvas{
+        background-color: white;
+        border: 1px solid;
+        float: left;
+      }
+      label{
+        margin: 10px;
+      }
+      .textArea{
+        border: 1px solid;
+        width: 380px;
+        margin-left: 10px;
+        resize: none;
+      }
+      #run{
+        margin: 10px;
+      }
+      #container{
+        width: 1200px;
+        margin: auto;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="container">
+      <canvas id="canvas" width="800" height="600">
+        Sorry, your browser does not support the canvas tag.
+      </canvas>
+      <label>Enter code to create drawing:</label>
+      <textarea id="codeArea" class="textArea" rows="15" cols="50"></textarea>
+      <button id="run" onclick="run()">Run</button>
+      <button id="coords" onclick="toggleCoords()">Numbers:On</button>
+      <textarea id="dxfArea" class="textArea" rows="15" cols="50"></textarea>
+      <label>The generated code above is dxf format.</label>
+    </div>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
