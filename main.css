@@ -1,0 +1,25 @@
+body{
+    background-color: lightgray;
+}
+#canvas{
+    background-color: white;
+    border: 1px solid;
+    float: left;
+}
+label{
+    margin: 10px;
+}
+.textArea{
+    border: 1px solid;
+    width: 380px;
+    margin-left: 10px;
+    resize: none;
+}
+#run{
+    margin: 10px;
+}
+#container{
+    width: 1200px;
+    margin: auto;
+    display: block;
+}
